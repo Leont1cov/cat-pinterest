@@ -28,9 +28,9 @@ export const HomePage = () => {
                 activeTab={activeTab}
                 observerRef={observerRef}
             >
-                {displayedCats.map((cat, index) => (
+                {displayedCats.map((cat) => (
                     <CatCard
-                        key={`${cat.id}-${index}`}
+                        key={cat.id}
                         cat={cat}
                         isFavorite={isFavorite(cat.id)}
                         onToggleFavorite={toggleFavorite}
