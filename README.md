@@ -2,7 +2,7 @@
 
 ## Ссылки
 
-- Демо: скоро
+- Демо: https://leont1cov.github.io/cat-pinterest
 - Репозиторий: https://github.com/Leont1cov/cat-pinterest
 
 ## Стек технологий
