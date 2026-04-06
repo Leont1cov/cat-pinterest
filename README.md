@@ -16,29 +16,32 @@
 
 1. Клонировать репозиторий:
    ```bash
-   git clone [url-репозитория]
+   git clone https://github.com/Leont1cov/cat-pinterest.git
    ```
 2. Установить зависимости:
     ```bash
     npm install
    ```
    или
+   
    ```bash
    yarn
    ```
-3. Запустить режим разработки:
+4. Запустить режим разработки:
    ```bash
    npm run dev
    ```
    или
+   
    ```bash
    yarn dev
    ```
-4. Сборка проекта:
+6. Сборка проекта:
    ```bash
    npm run build
    ```
    или
+   
    ```bash
    yarn build
    ```
