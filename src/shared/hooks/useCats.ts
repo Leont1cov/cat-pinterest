@@ -13,8 +13,15 @@ export const useCats = () => {
         setIsLoading(true)
 
         try {
-            const newCats = await fetchCats(15)
-            setCats((prev) => [...prev, ...newCats])
+            const newCats = await fetchCats(15, page)
+
+            setCats((prev) => {
+                const uniqueNewCats = newCats.filter(
+                    (newCat) => !prev.some((existingCat) => existingCat.id === newCat.id)
+                );
+                return [...prev, ...uniqueNewCats];
+            });
+
             setPage((prev) => prev + 1)
         } catch (error) {
             setError('Ошибка при загрузки котиков')
