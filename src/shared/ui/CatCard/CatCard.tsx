@@ -1,5 +1,5 @@
 import type { Cat } from '../../types/cat';
-import { HeartIcon } from './HeartIcon'; // Путь проверь сам
+import { HeartIcon } from './HeartIcon';
 import styles from './CatCard.module.css';
 
 interface CatCardProps {
@@ -13,7 +13,7 @@ export const CatCard = ({ cat, isFavorite, onToggleFavorite }: CatCardProps) => 
         <div className={styles.card}>
             <img src={cat.url} alt="Котик" className={styles.image} />
 
-            <div className={styles.overlay}>
+            <div className={`${styles.overlay} ${isFavorite ? styles.active : ''}`}>
                 <button
                     className={styles.heartButton}
                     onClick={(e) => {

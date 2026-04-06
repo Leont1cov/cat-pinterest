@@ -60,3 +60,15 @@
     color: var(--heart-active);
     transform: scale(0.9);
 }
+
+@media (max-width: 768px) {
+    .overlay {
+        opacity: 1;
+        background: none;
+    }
+
+    .heartButton {
+        width: 56px;
+        height: 56px;
+    }
+}
