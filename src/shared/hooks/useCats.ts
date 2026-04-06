@@ -13,7 +13,7 @@ export const useCats = () => {
         setIsLoading(true)
 
         try {
-            const newCats = await fetchCats(20)
+            const newCats = await fetchCats(15)
             setCats((prev) => [...prev, ...newCats])
             setPage((prev) => prev + 1)
         } catch (error) {
