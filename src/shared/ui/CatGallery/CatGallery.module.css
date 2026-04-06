@@ -1,30 +1,30 @@
 .main {
-    padding: 51px 62px 48px 62px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  padding: 51px 62px 48px 62px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(5, 225px);
-    gap: 48px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 225px);
+  gap: 48px;
+  justify-content: center;
 }
 
 .loader {
-    margin-top: 48px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.25px;
+  margin-top: 48px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
 }
 
 @media (max-width: 1350px) {
-    .grid {
-        grid-template-columns: repeat(auto-fill, 225px);
-        justify-content: center;
-    }
-    .main {
-        padding: 51px 20px;
-    }
+  .grid {
+    grid-template-columns: repeat(auto-fill, 225px);
+    justify-content: center;
+  }
+  .main {
+    padding: 51px 20px;
+  }
 }

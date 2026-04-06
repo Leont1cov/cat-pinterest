@@ -1,12 +1,12 @@
-import './App.css'
-import {HomePage} from "./pages/HomePage.tsx";
+import './App.css';
+import { HomePage } from './pages/HomePage.tsx';
 
 function App() {
-    return (
-        <>
-            <HomePage/>
-        </>
-    )
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }
 
-export default App
+export default App;

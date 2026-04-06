@@ -19,8 +19,8 @@
    git clone [url-репозитория]
    ```
 2. Установить зависимости:
-    ```bash
-    npm install
+   ```bash
+   npm install
    ```
    или
    ```bash
@@ -44,10 +44,11 @@
    ```
 
 ## Реализованный функционал
+
 - Бесконечная прокрутка (Intersection Observer API)
 - Система «Избранного» с сохранением в LocalStorage
 - Адаптивная верстка (мобильная и десктопная версии)
 - Декомпозиция логики в кастомные хуки:
-useCats
-useFavorites
-useInfiniteScroll
+  useCats
+  useFavorites
+  useInfiniteScroll
