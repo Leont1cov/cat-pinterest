@@ -1,20 +1,11 @@
 import './App.css'
 import {useCats} from "./shared/hooks/useCats.ts";
-import {useEffect, useRef} from "react";
+import {useInfiniteScroll} from "./shared/hooks/useInfiniteScroll.ts";
 
 function App() {
     const { cats, isLoading, loadMoreCats } = useCats()
-    const observerRef = useRef<HTMLDivElement | null>(null)
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && !isLoading) loadMoreCats();
-        }, {threshold: 0.1})
-
-        if (observerRef.current) observer.observe(observerRef.current)
-
-        return () => observer.disconnect()
-    }, [isLoading, loadMoreCats])
+    const observerRef = useInfiniteScroll({isLoading, onLoadMore: loadMoreCats})
 
     return (
         <main style={{ padding: '20px', fontFamily: 'sans-serif' }}>
